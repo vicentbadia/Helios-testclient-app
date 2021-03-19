@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="Picture">
+        <eu.h2020.helios_social.heliostestclient.ui.preferences.PicturePreference
+            app:key="picture"
+            android:clickable="true"/>
+        <Preference app:title="Switch"
+            app:key="switchpic"
+            android:clickable="true"
+            app:summary="Switch image"></Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Personal information">
+    <EditTextPreference app:title="Name (nickname)"
+        app:key="username"
+        app:summary="Please provide your username"></EditTextPreference>
+    <EditTextPreference app:title="Fullname"
+        app:key="fullname"
+        app:summary="Please provide your fullname"></EditTextPreference>
+    <EditTextPreference app:title="Phone number"
+        app:key="phonenumber"
+        app:summary="Please provide your phone number"></EditTextPreference>
+    <EditTextPreference app:title="Email address"
+        app:key="email"
+        app:summary="Please provide your email address"></EditTextPreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Home" >
+        <EditTextPreference app:title="Home address"
+            app:key="home"
+            app:summary="Please provide your home address"></EditTextPreference>
+        <Preference app:title="View home address"
+            app:key="viewhome"
+            android:clickable="true"
+            app:summary="View home location"></Preference>
+        <EditTextPreference app:title="Latitude"
+            app:key="homelat"
+            app:summary="Please provide coordinates of your home"></EditTextPreference>
+        <EditTextPreference app:title="Longitude"
+            app:key="homelong"
+            app:summary="Please provide coordinates of your home"></EditTextPreference>
+        <Preference app:title="View home location"
+            app:key="viewhomecoord"
+            android:clickable="true"
+            app:summary="View home location"></Preference>
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="Work" >
+        <EditTextPreference app:title="Work address"
+            app:key="work"
+            app:summary="Please provide your work address"></EditTextPreference>
+        <Preference app:title="View work address"
+            app:key="viewwork"
+            android:clickable="true"
+            app:summary="View work location"></Preference>
+        <EditTextPreference app:title="Latitude"
+            app:key="worklat"
+            app:summary="Please provide coordinates of your work"></EditTextPreference>
+        <EditTextPreference app:title="Longitude"
+            app:key="worklong"
+            app:summary="Please provide coordinates of your work"></EditTextPreference>
+        <Preference app:title="View work location"
+            app:key="viewworkcoord"
+            android:clickable="true"
+            app:summary="View work location"></Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Tags to share/search others. Everyone shares 'helios'" >
+        <ListPreference
+            app:key="tag_setting"
+            app:title="Extra tags to share/search others ('no-tags' shares only the default 'helios')"
+            app:entries="@array/tag_updates"
+            app:entryValues="@array/tag_updates_values"
+            app:defaultValue="0"
+            app:summary="Tag values"
+            />
+    </PreferenceCategory>
+    <!--
+        <SwitchPreferenceCompat
+            app:key="notifications"
+            app:title="Enable message notifications"/>
+    -->
+    <!--
+    <Preference
+        app:key="feedback"
+        app:title="Send feedback (TODO)"
+        app:summary="Report technical issues or suggest new features"/>
+    -->
+
+    <PreferenceCategory
+        android:title="Settings">
+        <ListPreference
+            app:key="list"
+            app:title="Profile share"
+            app:entries="@array/profile_share_names"
+            app:entryValues="@array/profile_share_values"
+            app:defaultValue="0"
+            app:summary="Choose profile share options"
+            />
+
+        <ListPreference
+            app:key="location_setting"
+            app:title="Use device location to determine context"
+            app:entries="@array/location_updates"
+            app:entryValues="@array/location_updates_values"
+            app:defaultValue="0"
+            app:summary="Disable or enable location."
+            />
+
+        <Preference
+        app:key="version"
+        app:selectable="false"
+        app:persistent="false"
+        app:title="Version"
+        app:summary="x"/>
+    </PreferenceCategory>
+
+    <!-- app:icon="@drawable/ic_palette_purple_36dp"
+     app:dialogIcon="@drawable/ic_palette_green_36dp"-->
+</androidx.preference.PreferenceScreen>

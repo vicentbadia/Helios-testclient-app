@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "eu.h2020.helios_social.heliostestclient"
+        minSdkVersion 26
+        targetSdkVersion 29
+        versionCode 11
+        versionName "1.1.5"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+}
+
+// configurations.all {
+//     resolutionStrategy.dependencySubstitution {
+//         substitute module("eu.h2020.helios_social.core.storage:storage") with project(':storage')
+//         substitute module("eu.h2020.helios_social.core.messaging:messaging") with project(':messaging')
+//         substitute module("eu.h2020.helios_social.core.profile:profile") with project(':profile')
+//         substitute module("eu.h2020.helios_social.core.security:security") with project(':security')
+//         substitute module("eu.h2020.helios_social.core.context:context") with project(':context')
+//         substitute module("eu.h2020.helios_social.core.messaging_nodejslibp2p:messaging_nodejslibp2p") with project(":messaging_nodejslibp2p")
+//     }
+// }
+
+dependencies {
+    def room_version = "2.2.6"
+
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.30"
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
+    implementation "androidx.room:room-runtime:$room_version"
+    implementation 'com.google.android.material:material:1.3.0'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation 'com.google.android.gms:play-services-location:17.1.0'
+    implementation 'com.jakewharton.threetenabp:threetenabp:1.2.1'
+    implementation 'androidx.preference:preference:1.1.1'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation("com.google.guava:guava:29.0-android")
+
+    implementation 'eu.h2020.helios_social.core.storage:storage:1.0.29'
+    implementation 'eu.h2020.helios_social.core.messaging:messaging:1.1.7'
+    implementation 'eu.h2020.helios_social.core.profile:profile:1.0.8'
+    implementation 'eu.h2020.helios_social.core.security:security:1.0.1'
+    implementation 'eu.h2020.helios_social.core.context:context:1.0.10'
+    implementation 'eu.h2020.helios_social.core.messagingnodejslibp2ptest:messagingnodejslibp2ptest:1.0.15'
+    implementation 'eu.h2020.helios_social.core.contextualegonetwork:contextualegonetwork:1.0.15'
+
+    //UPV - Neurobehaviour module:
+    implementation project(":neurobehaviour")
+}

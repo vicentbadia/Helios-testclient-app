@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">HELIOS Test Client</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_test">Test</string>
+    <string name="action_send">Send</string>
+    <string name="action_new_topic">New Chat</string>
+    <string name="title_activity_chat">Chat</string>
+    <string name="avatar_image">Avatar image</string>
+    <string name="avatar_info">Set your avatar by clicking the image</string>
+    <string name="setting_user_id">eu.h2020.helios_social.USER_ID</string>
+    <string name="setting_username">username</string>
+    <string name="setting_fullname">fullname</string>
+    <string name="setting_work_latlong">worklatlong</string>
+    <string name="setting_home_latlong">homelatlong</string>
+    <string name="setting_work_address">work</string>
+    <string name="setting_home_address">home</string>
+    <string name="setting_phone_number">phonenumber</string>
+    <string name="setting_email_address">email</string>
+    <string name="setting_sharing">list</string>
+    <string name="setting_location">location_setting</string>
+    <string name="setting_tag">tag_setting</string>
+    <string name="title_activity_media_view">MediaViewActivity</string>
+    <string name="action_peer_tag_list">Discover Others</string>
+    <string name="action_topic_members_list">Topic members online</string>
+    <string name="action_join_a_topic">Join a topic</string>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="profile_share_names">
+        <item>Share only name</item>
+        <item>Share full profile</item>
+    </string-array>
+    <string-array name="profile_share_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="location_updates">
+        <item>Location disabled</item>
+        <item>Location enabled</item>
+    </string-array>
+    <string-array name="location_updates_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="tag_updates">
+        <item>no-tags</item>
+        <item>dogs</item>
+        <item>cats</item>
+    </string-array>
+    <string-array name="tag_updates_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+</resources>

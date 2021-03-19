@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.MainActivity">
+
+    <item
+        android:id="@+id/join_a_topic"
+        android:title="@string/action_join_a_topic" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_peer_tag_list"
+        android:title="@string/action_peer_tag_list" />
+    <item
+        android:id="@+id/my_contexts"
+        android:title="My contexts" />
+
+</menu>

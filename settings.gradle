@@ -1,0 +1,9 @@
+//include ':app', ':storage', ':messaging', ':profile', ':security', ':context', ':messaging_nodejslibp2p'
+include ':app', ':neurobehaviour'
+
+// project(':storage').projectDir = new File("../storage/lib")
+// project(':messaging').projectDir = new File("../messaging/lib")
+// project(':profile').projectDir = new File("../profile/lib")
+// project(':security').projectDir = new File("../security/lib")
+// project(':context').projectDir = new File("../context/lib")
+// project(':messaging_nodejslibp2p').projectDir = new File("../messaging_nodejslibp2p/lib")
